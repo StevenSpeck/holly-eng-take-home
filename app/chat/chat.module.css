@@ -1,27 +1,6 @@
-/* @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 .chatContainer {
   display: flex;
   flex-direction: column;
-  /* max-width: 600px; */
   margin: 20px auto;
   padding: 20px;
 }
@@ -29,7 +8,6 @@
   margin: 10px 0;
   padding: 10px 15px;
   border-radius: 15px;
-  /* max-width: 70%; */
   position: relative;
 
   align-self: flex-start;
@@ -40,7 +18,6 @@
   margin: 10px 0;
   padding: 10px 15px;
   border-radius: 15px;
-  /* max-width: 70%; */
   position: relative;
 
   align-self: flex-end;
@@ -50,12 +27,12 @@
 }
 
 .inputContainer {
+  background-color: rgba(128, 128, 128, 0.5);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  
 }
 .inputBox {
   border: .1rem solid black;
@@ -74,15 +51,3 @@
   background-color: palevioletred;
 
 }
-
-/* 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
