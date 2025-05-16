@@ -2,11 +2,11 @@
 
 ## Overview
 
-This take-home assignment is designed to evaluate your technical skills across several areas important to our engineering team. Please spend no more than 2-3 hours on this task. It's completely fine if you don't finish everything - we're more interested in understanding your approach and thought process.
+This take-home assignment was designed to evaluate my technical skills across several areas important to the Holly engineering team. I spent no more than 2-3 hours on this task. I did not finish everything - but hopefully the engineering team is more interested in understanding my approach and thought process.
 
 ## Goals
 
-This assignment evaluates your skills in:
+This assignment evaluated my skills in:
 
 1. Data processing
 2. Next.js development
@@ -15,7 +15,7 @@ This assignment evaluates your skills in:
 
 ## The Challenge
 
-You'll build a simple chat interface that allows users to query job and salary information stored in JSON files. Think of it as a basic HR assistant that can answer questions about job descriptions and compensation. The interface doesn't have to be anything fancy.
+I built a simple chat interface that allows users to query job and salary information stored in JSON files. Think of it as a basic HR assistant that can answer questions about job descriptions and compensation. The interface isn't have to be anything fancy.
 
 ## Requirements
 
