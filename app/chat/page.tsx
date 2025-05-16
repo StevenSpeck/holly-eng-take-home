@@ -1,23 +1,27 @@
 "use client";
 import styles from "./chat.module.css";
 import { useState, ChangeEvent } from "react";
+import { triggerCohereChat } from "./chatbot";
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [messages, setMessages] = useState([
-    { text: "message 1", label: "Response" },
-    { text: "message 2", label: "Query" },
-    { text: "message 3", label: "Response" },
+    { text: "Please enter your question below and I will try to answer to the best of my ability!", label: "Response" },
   ]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
-  const handleAdd = () => {
+  const handleAdd = async () => {
     if (inputValue.trim() !== '') {
-      setMessages([...messages, { text: inputValue, label: "Query" }, { text: "Did you ask '" + inputValue + "' ?", label: "Response" }]);
-      setInputValue(''); // Clear input after adding
+      const response = await triggerCohereChat(inputValue);
+      if (response !== undefined) {
+        setMessages([...messages, { text: inputValue, label: "Query" }, { text: response, label: "Response" }, {text: "Let me know if you have any new or followup questions.", label: "Response"}]);
+      } else { 
+        setMessages([...messages, { text: inputValue, label: "Query" }, { text: "No response received", label: "Response" }]);
+      }
+      setInputValue('');
     }
   };
   return (
