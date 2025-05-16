@@ -1,5 +1,36 @@
 # Holly Engineering Take-Home Assignment
 
+## Results
+In a little under 3 hours (2 hours 58 minutes) I was able to get a chat working as seen here: [Loom vide] (https://www.loom.com/share/fa1fa5e1095148b1ac6b07f9f2a80813?sid=4397de66-9f0a-431c-b371-ea594409686f).  I ran out of time to make functions that could A. return the k most relevant rows from the `job-descriptions.json` and `salaries.json` and B. contribute that data to the request sent to the Cohere LLM.
+
+In the first hour I played around with trying to use Tailwind, however, I have not spent a lot of time with inline CSS and the Tailwind syntax so I reverted to a formatting that I am more familiar with.  For the next 30 minutes or so, I worked through the kinks of making the chat handle inputs correctly in React.  The last 90 or so minutes were spent finding an approrpriate LLM to use, getting a response from that model, and setting that to the client page.  I used a Cohere model because of the generous free tier.
+
+If I were to pull this code down to run locally, I would have to:
+1. install locally - open a target folder, initialize it as a git repo using the terminal command "git init" then run the command "git clone https://github.com/StevenSpeck/holly-eng-take-home.git"
+2. ensure all dependencies are installed on your machine - I specifically had to install next using "npm install next"
+3. get a Cohere API key to use - go to [Cohere] (https://cohere.com/) and click on "Try the playground" which after selecting a way to log in should present you with your own private key.  Set up a .env folder and set the variable with NEXT_PUBLIC_CO_API_KEY=YOUR_KEY where YOUR_KEY is the key without any quotation marks or offsets
+4. run locally - in terminal type 'npm run dev' and hit enter!
+
+Problem description is down below
+
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Overview
 
 This take-home assignment is designed to evaluate your technical skills across several areas important to our engineering team. Please spend no more than 2-3 hours on this task. It's completely fine if you don't finish everything - we're more interested in understanding your approach and thought process.
