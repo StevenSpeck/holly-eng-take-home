@@ -9,8 +9,9 @@
   padding: 10px 15px;
   border-radius: 15px;
   position: relative;
+  max-width: 60vw;
 
-  align-self: flex-start;
+  align-self: flex-end;
   background-color: #e9ecef;
   border-bottom-left-radius: 5px;
 }
@@ -19,8 +20,9 @@
   padding: 10px 15px;
   border-radius: 15px;
   position: relative;
+  max-width: 60vw;
 
-  align-self: flex-end;
+  align-self: flex-start;
   background-color: #007bff;
   color: white;
   border-bottom-right-radius: 5px;
