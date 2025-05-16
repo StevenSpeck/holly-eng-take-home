@@ -2,7 +2,6 @@ import {CohereClientV2} from 'cohere-ai';
 
 const cohere = new CohereClientV2({
   token: process.env.NEXT_PUBLIC_CO_API_KEY,
-    // token: "q6vFKHFpHv7yYIwzsB96xeStvfJLzjwVe6opsyUt",
 });
 
 export async function triggerCohereChat(query: string) {
